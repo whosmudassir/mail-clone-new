@@ -1,11 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import Body from "../components/Body";
 const Spam = () => {
-    return (
-        <div>
-            spam
-        </div>
-    )
-}
+  return (
+    <div>
+      <Body name="spam" />
+    </div>
+  );
+};
 
-export default Spam
+export default Spam;

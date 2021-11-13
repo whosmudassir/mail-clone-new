@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Body from "../components/Body";
 
 const Draft = () => {
-    return (
-        <div>
-            draft
-        </div>
-    )
-}
+  return (
+    <div>
+      <Body name="draft" />
+    </div>
+  );
+};
 
-export default Draft
+export default Draft;

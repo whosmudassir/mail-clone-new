@@ -2,18 +2,19 @@ import React from "react";
 import { data } from "../data";
 import Slot from "./Slot";
 
-const Body = () => {
-  const spamdata = data.filter((data) => {
-    if (data.tag == "spam") {
+const Body = ({ name }) => {
+  const selectedTagData = data.filter((data) => {
+    if (data.tag == name) {
       return data;
     }
   });
-  console.log(spamdata);
+
   return (
     <div>
-      {spamdata.map((data) => (
-        <Slot tag={data.tag} />
+      {selectedTagData.map((data) => (
+        <Slot {...data} />
       ))}
+      <p></p>
     </div>
   );
 };
