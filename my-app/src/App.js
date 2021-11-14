@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+import Nav from "./components/Nav";
 import Body from "./components/Body";
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <Nav />
         <Sidebar />
         {/* <Body /> */}
 
